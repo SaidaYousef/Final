@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import {Container,OneItem,Btn, Sdiv} from './CartElements'
+import {Container,OneItem,Btn, Sdiv, Img} from './CartElements'
 import {useSelector,useDispatch} from 'react-redux'
 import {ingredients} from '../Products/data'
 import { Addin} from '../../redux/action/storeaction'
@@ -73,7 +73,7 @@ const Cart =(props)=>{
                             })}
                             </div>
                             <div style={{height:'350px',width:'350px',position:'relative',overflow:'hidden'}}>
-                                <img src={e.img} style={{position:'absolute',height:'100%',width:'100%'}} alt="itempic"/>
+                                <Img src={e.img} alt="itempic"/>
                             </div>
                             </div>
                         </div>
