@@ -54,4 +54,9 @@ export const Sdiv1 = styled.div`
  width:50%;
  height:55%;
  ;
+ @media screen and (max-width: 650px) {
+    width: 100%;
+    border:none;
+    margin:30px;
+  }
 `
