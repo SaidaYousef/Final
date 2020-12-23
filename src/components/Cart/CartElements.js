@@ -21,7 +21,9 @@ export const Container = styled.div`
     url(${ImgBg});
   height: 100vh;
   background-position: center;
-  background-repeat:repeat;`;
+  background-repeat:repeat;
+ 
+ `;
   
 export const OneItem = styled.div`
     position:relative;
@@ -35,6 +37,12 @@ export const OneItem = styled.div`
     border-radius:15px;
     flex-direction:column;
     padding-left:20px;
+    @media screen and (max-width: 650px) {
+    width: 50%;
+    height:50%;
+    align-content:center;
+    min-height:400px;
+  }
     h1{
         font-size:1.5rem;
         color:black;
@@ -44,7 +52,7 @@ export const OneItem = styled.div`
     }
     h2:nth-child(3){
         color:green;
-    }
+    };
 `
 export const Btn = styled.div`
     z-index: 156561;
@@ -64,6 +72,7 @@ export const Btn = styled.div`
     border-style: solid;
   border-width: 35px;
   border-color: #150f0f;
+ 
 `
 export const Sdiv = styled.div`
  position:relative;
@@ -74,4 +83,15 @@ export const Sdiv = styled.div`
  flex-direction:column;
  height:100%;
  gap: 10px;
+
+`
+export const Img = styled.img`
+position:absolute;
+height:100%;
+width:100%;
+@media screen and (max-width: 650px) {
+    width:100%;
+    height:80%;
+    margin:97px 50px 0px 15px;
+  }
 `
